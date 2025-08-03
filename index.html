@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Vasanth Packaging - Boxes, Bags, Covers, Stickers and more. Best prices & quality.">
+<meta name="keywords" content="Packaging, Printing, Boxes, Paper Bags, Vasanth Packaging, Stickers, Covers">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Vasanth Packaging">
+
+<title>Vasanth Packaging</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  color: #eee;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 4rem;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem; /* Adjusted for mobile */
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem; /* Adjusted for mobile */
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFade 2s forwards;
+}
+
+.catalogue-header {
+  font-weight: 700;
+  font-size: 1.8rem; /* Adjusted for mobile */
+  color: #ff9e3b;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ffac36;
+  padding-bottom: 0.25rem;
+  transition: filter 0.3s;
+}
+
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted for mobile */
+  gap: 1rem; /* Reduced gap for mobile */
+  width: 100%;
+  max-width: 1080px;
+}
+
+.card {
+  background-color: #141414;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(255, 162, 29, 0.4);
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  max-height: 150px; /* Adjusted for mobile */
+  object-fit: cover;
+}
+
+.card .title {
+  font-weight: 600;
+  font-size: 1rem; /* Adjusted for mobile */
+  margin-bottom: 0.5rem; /* Adjusted for mobile */
+}
+
+.card button {
+  background-color: #333;
+  color: #eee;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem; /* Adjusted for mobile */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 4rem;
+  color: #aaa;
+  text-align: center;
+  font-size: 0.85rem; /* Adjusted for mobile */
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Further adjust for smaller screens */
+  }
+
+  .catalogue-header {
+    font-size: 1.5rem; /* Further adjust for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 1.2rem; /* Further adjust for smaller screens */
+  }
+
+  .card {
+    margin: 0.5rem; /* Add margin for better spacing */
+  }
+}
+
+* { box-sizing: border-box; }
+  
+  html {
+  scroll-behavior: smooth;
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scroll cursor effect */
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: #ff9e3b;
+  mix-blend-mode: difference;
+  z-index: 10000;
+  transition: transform 0.1s ease;
+}
+
+
+body {
+margin: 0;
+background-color: #0a0a0a;
+color: #eee;
+font-family: 'Montserrat', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 2rem 1rem 4rem;
+min-height: 100vh;
+}
+h1 {
+font-size: 3rem;
+font-weight: 700;
+margin: 0;
+text-align: center;
+}
+.text-orange-glow {
+color: #ffb56b;
+text-shadow: 0 0 8px #ff9f2a, 0 0 30px #ffb14f, 0 0 60px #ffb14f;
+}
+.text-silver-glow {
+color: #cfd8dc;
+text-shadow: 0 0 7px #b9c7ce, 0 0 15px #90a4ae;
+}
+  
+#descriptionInput {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+font-size: 1.2rem;
+color: #ccc;
+margin: 0.3em 0 2.5rem 0;
+text-align: center;
+}
+.catalogue-header {
+font-weight: 700;
+font-size: 2rem;
+color: #ff9e3b;
+margin-bottom: 2.5rem;
+border-bottom: 2px solid #ffac36;
+padding-bottom: 0.25rem;
+transition: filter 0.3s;
+}
+.catalogue-header:hover { filter: brightness(1.3); }
+
+.catalogue-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2rem;
+width: 100%;
+max-width: 1080px;
+}
+.card {
+background-color: #141414;
+border-radius: 1rem;
+box-shadow: 0 4px 8px rgba(255, 162, 29, 0.4);
+overflow: hidden;
+color: white;
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 20px rgba(255, 162, 29, 0.9);
+}
+.card img {
+width: 100%;
+max-height: 180px;
+object-fit: cover;
+}
+.card .card-body {
+padding: 1rem;
+}
+.card .title {
+font-weight: 600;
+font-size: 1.15rem;
+margin-bottom: 1rem;
+}
+.card button {
+background-color: #333;
+color: #eee;
+border: none;
+border-radius: 0.4rem;
+padding: 0.6rem 1.2rem;
+font-weight: 600;
+cursor: pointer;
+}
+.card button:hover {
+background-color: #ff9e3b;
+color: #222;
+}
+
+footer {
+margin-top: 4rem;
+color: #aaa;
+text-align: center;
+font-size: 0.95rem;
+border-top: 1px solid #333;
+padding-top: 1rem;
+}
+
+.modal {
+display: none;
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: rgba(0,0,0,0.8);
+justify-content: center;
+align-items: center;
+z-index: 999;
+}
+.modal-content {
+background: #1a1a1a;
+padding: 2rem;
+border-radius: 1rem;
+box-shadow: 0 0 20px #ff9e3b;
+width: 90%;
+max-width: 400px;
+}
+.modal-content h3 { color: #ffb14f; margin-top: 0; }
+.modal-content label {
+display: block;
+margin-top: 1rem;
+color: #ccc;
+}
+.modal-content input {
+width: 100%;
+padding: 0.5rem;
+margin-top: 0.3rem;
+border-radius: 0.4rem;
+border: none;
+}
+.modal-content button {
+margin-top: 1.5rem;
+width: 100%;
+padding: 0.7rem;
+background: #ff9e3b;
+border: none;
+font-weight: bold;
+border-radius: 0.4rem;
+cursor: pointer;
+color: #000;
+}
+.modal-content button:hover { background: #ffd89a; }
+  
+.hero {
+  background: url(https://pixahive.com/wp-content/uploads/2021/03/purple-black-texture-background-369600-pixahive.jpg) center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.2rem;
+  color: #ffb56b;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+  
+.subtitle {
+  font-size: 1.5rem;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFade 2s forwards;
+}
+
+@keyframes slideFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>
+    <span class="text-orange-glow">VASANTH</span><br />
+    <span class="text-silver-glow">PACKAGING</span>
+  </h1>
+  <p class="subtitle">Premium Printing & Box Making</p>
+
+</header>
+
+
+
+<h2 class="catalogue-header">Our Catalogue</h2>
+
+<section class="catalogue-grid" id="product-grid">
+<!-- Product cards start here -->
+<article class="card"><img src="https://degqkf7c4iqz7.cloudfront.net/kraftixon/images/product/Visiting-Card.jpg" alt="Visiting Cards" /><div class="card-body"><h3 class="title">Visiting Cards</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://phoenixprint.in/wp-content/uploads/2023/10/tra-3.jpg alt="PVC Cards" /><div class="card-body"><h3 class="title">Transparent Cards</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://tiimg.tistatic.com/fp/1/005/360/printed-corrugated-duplex-box-872.jpg alt="Boxes" /><div class="card-body"><h3 class="title">Boxes</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmCQ5JRFBkCSlgoyLH8WJ53SC3Wy6SNShj6w&s alt="Boxes with Inner Lid" /><div class="card-body"><h3 class="title">Boxes with Inner Lid</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://i.pinimg.com/736x/e3/ac/ec/e3acec0a350f8105ecb9a67cea2ead90.jpg alt="Paper Bags" /><div class="card-body"><h3 class="title">Paper Bags</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://cdn.truelancer.com/upload-medium/1909984-Brouchers-1.jpg alt="Brouchers" /><div class="card-body"><h3 class="title">Brouchers</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://img.freepik.com/premium-vector/restaurant-menu-card-design-template_896633-325.jpg alt="Menu Cards" /><div class="card-body"><h3 class="title">Menu Cards</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://printoads.com/wp-content/uploads/2023/08/Lanyard.webp alt="ID Cards" /><div class="card-body"><h3 class="title">ID Cards</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://millenniumworld.in/wp-content/uploads/2024/06/Printed-carry-bag.webp alt="Plastic Covers" /><div class="card-body"><h3 class="title">Plastic Covers</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://static.wixstatic.com/media/bcfdef_5db1df0be24c4e3484eb28e69265c565~mv2.jpg/v1/fill/w_480,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/bcfdef_5db1df0be24c4e3484eb28e69265c565~mv2.jpg alt="Envelope" /><div class="card-body"><h3 class="title">Envelope</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://dotbadges.com/wp-content/uploads/2023/01/Panda-Sticker-510x510.webp alt="Stickers" /><div class="card-body"><h3 class="title">Stickers</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://quapri.in/wp-content/uploads/2025/06/transparent-stickers.webp alt="Transparent Stickers" /><div class="card-body"><h3 class="title">Transparent Stickers</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,q_auto:best,t_productPageHeroGalleryTransformation_v2,w_auto/India%20LOB/marketing%20Materials/Danglers/IN_Danglers_Hero-image_02 alt="Danglers" /><div class="card-body"><h3 class="title">Danglers</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEVEa9mZdndENCA_V_mpGgmrnodWDGvZWuYl29GjkSji0criypYeunXb0WF7jBn1FzLI&usqp=CAU alt="Paper Bucket" /><div class="card-body"><h3 class="title">Paper Bucket</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://cdn.pacdora.com/preview/dieline-156210.png alt="DieLine" /><div class="card-body"><h3 class="title">DieLine Making</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://files.printo.in/site/20230531_175003375032_a6fa19_Custom-Paper-Pouches.jpg alt="Pouches" /><div class="card-body"><h3 class="title">Pouches</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://static.vecteezy.com/system/resources/thumbnails/000/262/988/small/flipping-book.jpg alt="Books" /><div class="card-body"><h3 class="title">Books Printing</h3><button>Order Now</button></div></article>
+<article class="card"><img src="https://www.helixgram.com/wp-content/uploads/2022/04/plastic-card-printing-with-matte-laminataion-finish-plastic-business-cards-printed-plastic-business-cards-plastic-thick-business-cards-plastic-visiting-cards-plastic-name-card-printing-shop-online-800x600.jpg" alt="Paper Bags" /><div class="card-body"><h3 class="title">Pvc Card</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://m.media-amazon.com/images/I/61ililp+M7L.jpg alt="Bill Books" /><div class="card-body"><h3 class="title">Bill Books</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://tiimg.tistatic.com/fp/1/008/530/paper-hospital-file-folder-envelope-354.jpg alt="Files" /><div class="card-body"><h3 class="title">Files</h3><button>Order Now</button></div></article>
+<article class="card"><img src=https://www.printmate.in/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/y/cyo_white_men_hs-min_1.png alt="T-Shirt Printing" /><div class="card-body"><h3 class="title">T-Shirt Printing</h3><button>Order Now</button></div></article>
+</section>
+
+<!-- Modal -->
+<div class="modal" id="orderModal">
+<div class="modal-content">
+<h3 id="modalTitle">Order Now</h3>
+<label>Quantity:</label>
+<input type="number" id="quantityInput" placeholder="Enter quantity" />
+<label>Height (in cm):</label>
+<input type="number" id="heightInput" placeholder="Enter height" />
+<label>Width (in cm):</label>
+<input type="number" id="widthInput" placeholder="Enter width" />
+  <label for="descriptionInput">Description (optional):</label>
+<textarea id="descriptionInput" rows="3" placeholder="Enter any extra details..."></textarea>
+
+<button id="submitOrder">Submit</button>
+</div>
+</div>
+
+<!-- Footer -->
+<footer>
+<p>Vasanth Packaging, Red Hills, Lakdi-Ka-Pool, Hyd-04</p>
+  <p>Mail : smarangoud27@gmail.com</p>
+<p>Contact: +91 9010929471</p>
+</footer>
+
+<script>
+const modal = document.getElementById("orderModal");
+const modalTitle = document.getElementById("modalTitle");
+const quantityInput = document.getElementById("quantityInput");
+const heightInput = document.getElementById("heightInput");
+const widthInput = document.getElementById("widthInput");
+const submitOrder = document.getElementById("submitOrder");
+let selectedProduct = "";
+
+// Show modal when "Order Now" button is clicked
+document.querySelectorAll(".card button").forEach(button => {
+  button.addEventListener("click", () => {
+    const title = button.closest(".card").querySelector(".title").textContent;
+    selectedProduct = title;
+    modalTitle.textContent = `Order: ${title}`;
+    quantityInput.value = "";
+    heightInput.value = "";
+    widthInput.value = "";
+    modal.style.display = "flex";
+  });
+});
+
+// Close modal when clicking outside of the modal content
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) { // Check if the click is on the modal background
+    modal.style.display = "none"; // Hide the modal
+  }
+});
+
+// Handle the submit order button click
+submitOrder.addEventListener("click", () => {
+  const qty = quantityInput.value.trim();
+  const height = heightInput.value.trim();
+  const width = widthInput.value.trim();
+  const description = descriptionInput.value.trim();
+
+  if (!qty) {
+    alert("Please enter a quantity.");
+    return;
+  }
+
+  let msg = `Hello, I'm interested in:\nProduct: ${selectedProduct}\nQuantity: ${qty}`;
+  if (height) msg += `\nHeight: ${height}cm`;
+  if (width) msg += `\nWidth: ${width}cm`;
+  if (description) msg += `\nDescription: ${description}`;
+
+  const encoded = encodeURIComponent(msg);
+  window.open(`https://wa.me/919010929471?text=${encoded}`, "_blank");
+  modal.style.display = "none"; // Close the modal after submitting
+});
+
+
+document.querySelectorAll(".card button").forEach(button => {
+button.addEventListener("click", () => {
+const title = button.closest(".card").querySelector(".title").textContent;
+selectedProduct = title;
+modalTitle.textContent = `Order: ${title}`;
+quantityInput.value = "";
+heightInput.value = "";
+widthInput.value = "";
+modal.style.display = "flex";
+});
+});
+
+submitOrder.addEventListener("click", () => {
+  const qty = quantityInput.value.trim();
+  const height = heightInput.value.trim();
+  const width = widthInput.value.trim();
+  const description = descriptionInput.value.trim();
+
+  if (!qty) {
+    alert("Please enter a quantity.");
+    return;
+  }
+
+  let msg = `Hello, I'm interested in:\nProduct: ${selectedProduct}\nQuantity: ${qty}`;
+  if (height) msg += `\nHeight: ${height}cm`;
+  if (width) msg += `\nWidth: ${width}cm`;
+  if (description) msg += `\nDescription: ${description}`;
+
+  const encoded = encodeURIComponent(msg);
+  window.open(`https://wa.me/919010929471?text=${encoded}`, "_blank");
+  modal.style.display = "none";
+});
+
+  
+    // Cursor movement
+ const cursor = document.getElementById('cursor');
+window.addEventListener('mousemove', e => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+
+  
+  // Scroll reveal effect
+const cards = document.querySelectorAll('.card');
+const revealOnScroll = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+  cards.forEach((card, i) => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < triggerBottom) {
+      setTimeout(() => {
+        card.classList.add('visible');
+      }, i * 100); // stagger animation
+    }
+  });
+};
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+</script>
+  
+  <div class="custom-cursor" id="cursor"></div>
+
+
+</body>
+</html>
